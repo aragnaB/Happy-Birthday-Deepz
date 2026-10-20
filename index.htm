@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Deepzz ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 3.5rem;
+            color: #ff758c;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ff7eb3;
+            margin-bottom: 25px;
+        }
+        .song-badge {
+            background: rgba(255, 117, 140, 0.2);
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 117, 140, 0.4);
+        }
+        .envelope {
+            background: #ff758c;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: transform 0.3s ease, background 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 117, 140, 0.4);
+        }
+        .envelope:hover {
+            transform: scale(1.05);
+            background: #ff5270;
+        }
+        .message-box {
+            display: none;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-style: italic;
+            border-left: 4px solid #ff758c;
+            line-height: 1.6;
+        }
+        .reasons-title {
+            margin-top: 30px;
+            font-size: 1.3rem;
+            color: #ff7eb3;
+            margin-bottom: 15px;
+        }
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            text-align: left;
+        }
+        .reason-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            border-left: 3px solid #ff7eb3;
+            transition: background 0.3s;
+        }
+        .reason-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Birthday, Deepzz! ❤️</h1>
+        <h2>October 22nd</h2>
+
+        <div class="song-badge">
+            🎵 Dedicated Song: <strong>"Tu hi Yaar Mera"</strong>
+        </div>
+
+        <div class="envelope" onclick="toggleMessage()">
+            💌 Click to Open Your Letter
+        </div>
+
+        <div id="messageBox" class="message-box">
+            "Today I wanted to be there to sing out of tune and steal the first slice of cake. Since I can’t, I sent the party to you: open it, blow out the candles and see you after 2 years ��[...]
+        </div>
+
+        <div class="reasons-title">Things That Make You, You (And Why I Miss You So Much):</div>
+        
+        <div class="reasons-grid">
+            <div class="reason-card">✨ Your adorable overthinking</div>
+            <div class="reason-card">💬 Our sweet talks</div>
+            <div class="reason-card">😂 Our little, little funny fights</div>
+            <div class="reason-card">🍯 Calling you "bangara" and "muddduu" (I really miss it!)</div>
+            <div class="reason-card">🌹 No one can ever replace you!!</div>
+            <div class="reason-card">💭 The times we used to cry for each other (it still stays with me, even coming to my dreams)</div>
+        </div>
+
+        <div class="footer">
+            See you after 2 years 👊👊
+        </div>
+    </div>
+
+    <script>
+        function toggleMessage() {
+            const msg = document.getElementById('messageBox');
+            if (msg.style.display === 'block') {
+                msg.style.display = 'none';
+            } else {
+                msg.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
